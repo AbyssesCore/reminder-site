@@ -1,0 +1,64 @@
+:root {
+	--TextSize: 20px;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	color: white;
+	background-color: #121212;
+	font-size: var(--TextSize)
+}
+
+#navList {
+	background-color: #323232;
+	margin: 0;
+}
+
+#navList > * {
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 10px;
+	background-color: #202020;
+	margin: 7px 10px 7px 0;
+}
+#openAnonsCreator {
+	position: relative;
+	float: right;
+}
+
+#cross {
+	position: absolute;
+	bottom: calc(50% - 16px);
+	left: -37px;
+	padding: 0;
+	width: 32px;
+	height: 32px;
+	border:0;
+	background-color: transparent;
+	transition: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+#openAnonsCreator #cross i {
+	position: absolute;
+	background-color: #0e0ee8;
+	bottom: 50%;
+	overflow: hidden;
+}
+
+#openAnonsCreator #cross :first-child {
+	width: 5px;
+	height: 30px;
+	left: calc(50% - 3px);
+	top: 0;
+}
+
+#openAnonsCreator #cross :last-child {
+	width: 30px;
+	height: 5px;
+}
+
+#openAnonsCreator:hover #cross {
+	transform: rotate(45deg);
+}
